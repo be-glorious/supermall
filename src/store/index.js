@@ -2,13 +2,14 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    imgCounter: 0
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
+    itemImgLoad(state) {
+      state.imgCounter++;
+    }
   },
-  actions: {
-  },
-  modules: {
-  }
+  actions: {},
+  modules: {}
 })
