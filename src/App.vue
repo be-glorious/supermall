@@ -1,9 +1,8 @@
 <template>
   <div id="app" class="wrapper">
-    <keep-alive>
+    <!-- <keep-alive> -->
       <router-view/>
-    </keep-alive>
-      
+    <!-- </keep-alive> -->
     <main-tab-bar/>
   </div>
 </template>

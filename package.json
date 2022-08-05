@@ -9,14 +9,17 @@
   "dependencies": {
     "axios": "^0.27.2",
     "better-scroll": "^1.13.2",
+    "fastclick": "^1.0.6",
     "mitt": "^3.0.0",
     "vue": "^3.2.13",
+    "vue-lazyload": "^3.0.0-rc.2",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "postcss-px-to-viewport": "^1.1.1"
   }
 }

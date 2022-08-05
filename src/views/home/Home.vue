@@ -118,8 +118,10 @@ export default {
           this.currentType = "sell";
           break;
       }
-      this.$refs.tabControl1.currentIndex = index;
-      this.$refs.tabControl2.currentIndex = index;
+      if(this.$refs.tabControl1 !== undefined){
+        this.$refs.tabControl1.currentIndex = index;
+        this.$refs.tabControl2.currentIndex = index;
+      }
     },
     //回到顶部
     topClick(){
@@ -154,10 +156,7 @@ export default {
     //轮播图图片监听
     swiperImageLoad(){
       this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop;
-    }
-
-
-   
+    } 
   },
   watch:{
     img(newName,oldName){
